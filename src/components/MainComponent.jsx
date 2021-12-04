@@ -7,10 +7,11 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import Introduction from './Introduction';
+import Footer from './Footer';
 
 const MainComponent = () => {
   return (
-    <div className="container">
+    <div className="divide-y divide-light-blue-400">
       <SideNav />
       <Introduction />
       <About />
@@ -19,6 +20,7 @@ const MainComponent = () => {
       <Projects />
       <Education />
       <Contact />
+      <Footer />
     </div>
   );
 }
