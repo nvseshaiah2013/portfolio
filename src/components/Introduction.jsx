@@ -1,19 +1,19 @@
 import React from 'react';
-import Particles from 'react-tsparticles';
+// import Particles from 'react-tsparticles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobeAsia } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithubSquare, faInstagramSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
 const Introduction = () => {
 
-    const particlesInit = (main) => { }
+    // const particlesInit = (main) => { }
 
-    const particlesLoaded = (container) => { }
+    // const particlesLoaded = (container) => { }
 
     return (
         <section id="introduction">
             <div className="flex flex-col min-h-screen">
-                <Particles
+                {/* <Particles
                     id="tsparticles"
                     init={particlesInit}
                     loaded={particlesLoaded}
@@ -56,7 +56,7 @@ const Introduction = () => {
                             },
                         }
                     }}
-                />
+                /> */}
 
                 <p className="mx-auto text-2xl p-4 mt-20"> Hello, World
                 <FontAwesomeIcon
