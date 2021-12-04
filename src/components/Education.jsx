@@ -10,7 +10,7 @@ const Education = () => {
                     Education
                 </p>
                 <div className="flex justify-center md:pl-52">
-                    <div className="text-right">
+                    <div className="text-right hidden md:block">
                         <div className="flex flex-col">
                             <p className="font-semi-bold text-indigo-900 leading-loose">
                                 Graduation
@@ -47,6 +47,12 @@ const Education = () => {
                                 <div className="font-medium text-gray-500 leading-loose">
                                     Computer Science Engineering
                             </div>
+                                <div className="flex flex-col md:hidden">
+                                    <p className="font-semi-bold text-indigo-900 leading-loose">
+                                        Graduation
+                            </p>
+                                    <p className="font-medium text-gray-900"> Passed : 2020 </p>
+                                </div>
                                 <div className="italic text-blue-800">
                                     CGPA : 9.24 / 10.00
                             </div>
@@ -66,6 +72,12 @@ const Education = () => {
                                 <div className="font-medium text-gray-500 leading-loose">
                                     Science Stream of Central Board of Secondary Education
                             </div>
+                            <div className="flex flex-col md:hidden">
+                            <p className="font-semi-bold text-indigo-900 leading-loose">
+                                Intermediate
+                            </p>
+                            <p className="font-medium text-gray-900"> Passed : 2016 </p>
+                        </div>
                                 <div className="italic text-blue-800">
                                     Percent : 88 %
                             </div>
@@ -82,6 +94,12 @@ const Education = () => {
                                 <div className="font-medium text-gray-500 leading-loose">
                                     Matriculation of Central Board of Secondary Education
                             </div>
+                            <div className="flex flex-col md:hidden">
+                            <p className="font-semi-bold text-indigo-900 leading-loose">
+                                Matriculation
+                            </p>
+                            <p className="font-medium text-gray-900"> Passed : 2014 </p>
+                        </div>
                                 <div className="italic text-blue-800">
                                     CGPA : 9.00 / 10.00
                             </div>

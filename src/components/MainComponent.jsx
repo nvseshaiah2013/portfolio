@@ -1,5 +1,5 @@
 import React from 'react';
-import SideNav from './SideNav';
+import TopNav from './TopNav';
 import About from './About';
 import Education from './Education';
 import Experience from './Experience';
@@ -12,7 +12,7 @@ import Footer from './Footer';
 const MainComponent = () => {
   return (
     <div className="divide-y divide-light-blue-400">
-      <SideNav />
+      <TopNav />
       <Introduction />
       <About />
       <Experience />

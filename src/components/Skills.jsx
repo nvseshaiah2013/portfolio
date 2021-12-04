@@ -31,7 +31,7 @@ const Skills = () => {
                         <p className="leading-loose text-lg">C</p>
                     </div>
                     <div className="flex flex-col text-center">
-                        <h2 className="leading-loose font-medium text-xl text-indigo-500">Miscellaneous</h2>
+                        <h2 className="leading-loose font-medium text-xl text-indigo-500">Miscellaneous Skills</h2>
                         <p className="leading-loose text-lg">REST API</p>
                         <p className="leading-loose text-lg">Jira</p>
                         <p className="leading-loose text-lg">Confluence</p>

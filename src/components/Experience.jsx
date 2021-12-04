@@ -10,7 +10,7 @@ const Experience = () => {
                     Experience
                 </p>
                 <div className="flex justify-center">
-                    <div className="text-right">
+                    <div className="text-right hidden md:block">
                         <div className="flex flex-col">
                             <p className="font-semi-bold text-indigo-900 leading-loose">
                                 Senior Analyst / Software Engineer
@@ -37,6 +37,12 @@ const Experience = () => {
                                 <div className="font-medium text-indigo-500 leading-relaxed text-lg">
                                     Capgemini IN, Bengaluru
                             </div>
+                                <div className="flex flex-col md:hidden">
+                                    <p className="font-semi-bold text-indigo-900 leading-loose">
+                                        Senior Analyst / Software Engineer
+                            </p>
+                                    <p className="font-medium text-gray-900"> August 2020 - Present </p>
+                                </div>
                                 <div className="flex flex-col space-y-0.5">
                                     <div className="leading-loose"> <FontAwesomeIcon icon={faArrowRight} /> Currently, applying my skills as Backend Developer</div>
                                     <div className="leading-loose"> <FontAwesomeIcon icon={faArrowRight} /> Learnt to convert user requirements to efficient code</div>
@@ -56,6 +62,12 @@ const Experience = () => {
                                 <div className="font-medium text-indigo-500 leading-relaxed text-lg">
                                     Capgemini IN, Pune
                             </div>
+                                <div className="flex flex-col md:hidden">
+                                    <p className="font-semi-bold text-indigo-900 leading-loose">
+                                        JEE Full Stack Intern
+                            </p>
+                                    <p className="font-medium text-gray-900"> January 2020 - April 2020 </p>
+                                </div>
                                 <div className="flex flex-col space-y-0.5">
                                     <div className="leading-10"> <FontAwesomeIcon icon={faArrowRight} /> Building the reusable, efficient and reliable Java code.</div>
                                     <div className="leading-loose"> <FontAwesomeIcon icon={faArrowRight} /> Frontend : HTML, CSS, Angular 6+, Typescript</div>
