@@ -30,7 +30,7 @@ const About = () => {
                 <p className="text-center mx-auto pb-3 text-lg font-semibold text-indigo-900">
                     Designation
                 </p>
-                <p className="text-center mx-auto pb-3 text-md font-medium"> Sr Analyst/ Software Developer</p>
+                <p className="text-center mx-auto pb-3 text-md font-medium"> Associate Consultant / Software Developer</p>
                 <p className="text-center mx-auto pb-3 text-lg font-semibold text-indigo-900">
                     Email
                 </p>

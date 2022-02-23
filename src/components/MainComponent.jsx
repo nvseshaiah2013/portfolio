@@ -8,6 +8,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Introduction from './Introduction';
 import Footer from './Footer';
+import Articles from './Articles';
 
 const MainComponent = () => {
   return (
@@ -18,6 +19,7 @@ const MainComponent = () => {
       <Experience />
       <Skills />
       <Projects />
+      <Articles />
       <Education />
       <Contact />
       <Footer />

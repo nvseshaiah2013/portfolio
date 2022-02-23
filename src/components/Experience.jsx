@@ -13,7 +13,7 @@ const Experience = () => {
                     <div className="text-right hidden md:block">
                         <div className="flex flex-col">
                             <p className="font-semi-bold text-indigo-900 leading-loose">
-                                Senior Analyst / Software Engineer
+                                Associate Consultant / Software Engineer
                             </p>
                             <p className="font-medium text-gray-900"> August 2020 - Present </p>
                         </div>

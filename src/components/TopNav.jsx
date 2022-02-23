@@ -15,14 +15,18 @@ const TopNav = () => {
         Work Experience
       <FontAwesomeIcon icon={faBuilding} className="h-6 w-6 align-bottom  ml-1" />
       </a>
-      <a href="#projects" className="border-gray-500 p-3 bg-gray-200 font-semibold opacity-40 hover:opacity-100">
-        Projects
-      <FontAwesomeIcon icon={faProjectDiagram} className="h-6 w-6 align-bottom ml-1" />
-      </a>
       <a href="#skills" className="border-gray-500 p-3 bg-gray-200 font-semibold opacity-40 hover:opacity-100">
         Skills
       <FontAwesomeIcon icon={faFlask} className="h-6 w-6 align-bottom  ml-1" />
       </a>
+      <a href="#projects" className="border-gray-500 p-3 bg-gray-200 font-semibold opacity-40 hover:opacity-100">
+        Projects
+      <FontAwesomeIcon icon={faProjectDiagram} className="h-6 w-6 align-bottom ml-1" />
+      </a>
+      <a href="#articles" className="border-gray-500 p-3 bg-gray-200 font-semibold opacity-40 hover:opacity-100">
+        Artices
+      <FontAwesomeIcon icon={faFlask} className="h-6 w-6 align-bottom  ml-1" />
+      </a>      
       <a href="#education" className="border-gray-500 p-3 bg-gray-200 font-semibold opacity-40 hover:opacity-100">
         Education
       <FontAwesomeIcon icon={faBook} className="h-6 w-6 align-bottom  ml-1" />
