@@ -24,7 +24,7 @@ const TopNav = () => {
       <FontAwesomeIcon icon={faProjectDiagram} className="h-6 w-6 align-bottom ml-1" />
       </a>
       <a href="#articles" className="border-gray-500 p-3 bg-gray-200 font-semibold opacity-40 hover:opacity-100">
-        Artices
+        Articles
       <FontAwesomeIcon icon={faFlask} className="h-6 w-6 align-bottom  ml-1" />
       </a>      
       <a href="#education" className="border-gray-500 p-3 bg-gray-200 font-semibold opacity-40 hover:opacity-100">
