@@ -18,11 +18,11 @@ const About = () => {
                 <p className="text-center mx-auto pb-3 text-lg font-semibold text-indigo-900">
                     Current Company
                 </p>
-                <p className="text-center mx-auto pb-3 text-md font-medium"> Capgemini, IN</p>
+                <p className="text-center mx-auto pb-3 text-md font-medium"> Rakuten Symphony, IN</p>
                 <p className="text-center mx-auto pb-3 text-lg font-semibold text-indigo-900">
                     Current Company - Date Joined
                 </p>
-                <p className="text-center mx-auto pb-3 text-md font-medium"> August 2020 </p>
+                <p className="text-center mx-auto pb-3 text-md font-medium"> September 2022 </p>
                 <p className="text-center mx-auto pb-3 text-lg font-semibold text-indigo-900">
                     Current Profile
                 </p>
@@ -30,7 +30,7 @@ const About = () => {
                 <p className="text-center mx-auto pb-3 text-lg font-semibold text-indigo-900">
                     Designation
                 </p>
-                <p className="text-center mx-auto pb-3 text-md font-medium"> Associate Consultant / Software Developer</p>
+                <p className="text-center mx-auto pb-3 text-md font-medium"> Senior Software Engineer</p>
                 <p className="text-center mx-auto pb-3 text-lg font-semibold text-indigo-900">
                     Email
                 </p>
@@ -38,7 +38,7 @@ const About = () => {
                 <p className="text-center mx-auto pb-3 text-lg font-semibold text-indigo-900">
                     Core Technologies
                 </p>
-                <p className="text-center mx-auto pb-3 text-md font-medium"> Java 11, Springboot</p>
+                <p className="text-center mx-auto pb-3 text-md font-medium"> Java 11, Springboot, Micro Services</p>
             
             </div>
         </section>

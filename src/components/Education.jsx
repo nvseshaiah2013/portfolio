@@ -33,8 +33,8 @@ const Education = () => {
                     <div className="pl-4 flex flex-col">
 
                         <div className="flex relative pb-10">
-                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                             </div>
                             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
                                 <FontAwesomeIcon icon={faUserGraduate} />
@@ -59,8 +59,8 @@ const Education = () => {
                             </div>
                         </div>
                         <div className="flex relative pb-10">
-                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                             </div>
                             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
                                 <FontAwesomeIcon icon={faUserGraduate} />
