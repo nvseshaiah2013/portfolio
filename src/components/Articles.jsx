@@ -2,7 +2,7 @@ import React from 'react';
 
 const Articles = () => {
     return (
-        <section id="articles">
+        <section id="articles" className="bg-gradient-to-t from-gray-100 to-gray-200">
             <div className="flex flex-col min-h-screen">
                 <p className="mx-auto p-9 text-lg md:text-3xl text-blue-900">
                     Articles

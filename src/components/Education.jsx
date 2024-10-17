@@ -4,7 +4,7 @@ import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 
 const Education = () => {
     return (
-        <section id="education">
+        <section id="education" className="bg-gradient-to-b from-gray-100 to-gray-200">
             <div className="flex flex-col min-h-screen">
                 <p className="mx-auto p-9 text-lg md:text-3xl text-blue-900">
                     Education

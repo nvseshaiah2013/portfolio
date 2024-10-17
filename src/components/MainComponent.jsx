@@ -3,7 +3,6 @@ import TopNav from './TopNav';
 import About from './About';
 import Education from './Education';
 import Experience from './Experience';
-import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import Introduction from './Introduction';
@@ -17,7 +16,6 @@ const MainComponent = () => {
       <Introduction />
       <About />
       <Experience />
-      <Skills />
       <Projects />
       <Articles />
       <Education />
