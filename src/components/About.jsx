@@ -1,62 +1,76 @@
 import React from 'react';
-import { faJava, faGit, faDocker } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faJava, faGit, faDocker, faJs, faReact, faAws } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faDharmachakra, faStream, faLeaf, faCubes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const About = () => {
+    const skills = [
+        { name: "Java", icon: faJava, color: "text-red-500" },
+        { name: "Spring Boot", icon: faLeaf, color: "text-emerald-500" },
+        { name: "Microservices", icon: faCubes, color: "text-indigo-400" },
+        { name: "Kubernetes", icon: faDharmachakra, color: "text-blue-500" },
+        { name: "Kafka", icon: faStream, color: "text-slate-400" },
+        { name: "Couchbase", icon: faDatabase, color: "text-red-500" },
+        { name: "MySQL", icon: faDatabase, color: "text-blue-400" },
+        { name: "MongoDB", icon: faDatabase, color: "text-green-500" },
+        { name: "Docker", icon: faDocker, color: "text-blue-500" },
+        { name: "AWS", icon: faAws, color: "text-orange-400" },
+        { name: "React", icon: faReact, color: "text-cyan-400" },
+        { name: "JavaScript", icon: faJs, color: "text-yellow-400" },
+        { name: "Git", icon: faGit, color: "text-orange-500" },
+    ];
+
     return (
-        <section id="about" className="bg-gradient-to-b from-gray-100 to-gray-200 py-16">
+        <section id="about" className="py-20 relative">
             <div className="container mx-auto px-4 md:px-8 lg:px-16">
-                <h2 className="text-4xl text-center font-bold text-gray-800 mb-6">About Me</h2>
-                <p className="text-2xl text-center text-gray-700 font-semibold mb-8">My Small Intro</p>
-                <p className="text-center text-lg font-semibold md:w-3/4 mx-auto text-gray-600 leading-relaxed mb-12">
-                    I'm a keen observer and passionate about problem-solving. As a web developer, I am always eager to learn new technologies and experiment with innovative tools to deliver optimized solutions.
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div className="col-span-1 sm:col-span-2 lg:col-span-3 bg-white shadow-lg rounded-lg p-6 text-center transition transform hover:scale-105 duration-300">
-                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">Name</h3>
-                        <p className="text-lg font-medium text-gray-600">Venkata Seshaiah</p>
-                    </div>
-
-                    <div className="bg-white shadow-lg rounded-lg p-6 text-center transition transform hover:scale-105 duration-300">
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">Current Company</h3>
-                        <p className="text-md font-medium text-gray-600">Rakuten India</p>
-                    </div>
-
-                    <div className="bg-white shadow-lg rounded-lg p-6 text-center transition transform hover:scale-105 duration-300">
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">Current Profile</h3>
-                        <p className="text-md font-medium text-gray-600">Backend Engineer</p>
-                    </div>
-
-                    <div className="bg-white shadow-lg rounded-lg p-6 text-center transition transform hover:scale-105 duration-300">
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">Designation</h3>
-                        <p className="text-md font-medium text-gray-600">Senior Software Engineer II</p>
-                    </div>
-
-                    <div className="bg-white shadow-lg rounded-lg p-6 text-center transition transform hover:scale-105 duration-300">
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">Email</h3>
-                        <p className="text-md font-medium text-blue-600 hover:text-blue-800 transition duration-300">nvseshaiah2013@gmail.com</p>
-                    </div>
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500 mb-4">About Me</h2>
+                    <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 mx-auto rounded-full"></div>
                 </div>
-                <div className="container mx-auto text-center">
-                    <h1 className="text-4xl font-bold text-blue-800 mb-12">My Skills</h1>
-                    <div className="flex flex-wrap justify-center gap-4">
-                        {[
-                            { name: "Java (Spring)", icon: faJava },
-                            { name: "MySQL", icon: faDatabase },
-                            { name: "MongoDB", icon: faDatabase },
-                            { name: "Git", icon: faGit },
-                            { name: "Docker", icon: faDocker },
-                        ].map((skill, index) => (
-                            <div
-                                key={index}
-                                className="bg-white shadow-md rounded-md p-4 flex items-center transition-transform transform hover:scale-105 hover:shadow-lg"
-                            >
-                                <FontAwesomeIcon icon={skill.icon} className="text-xl text-blue-500 mr-2" />
-                                <span className="text-md text-gray-700">{skill.name}</span>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    {/* Personal Details */}
+                    <div className="glass p-8 rounded-xl border border-white/5 shadow-lg hover:bg-white/5 transition-colors duration-300">
+                        <h3 className="text-2xl font-bold text-white mb-6">Personal Details</h3>
+                        <p className="text-gray-300 mb-6 leading-relaxed">
+                            I am a dedicated developer with a strong foundation in computer science. I love creating efficient and scalable solutions.
+                        </p>
+                        <div className="space-y-4">
+                            <div className="flex items-center text-gray-300 group">
+                                <span className="w-24 font-semibold text-emerald-400">Name:</span>
+                                <span className="group-hover:text-white transition-colors">Venkata Seshaiah</span>
                             </div>
-                        ))}
+                            <div className="flex items-center text-gray-300 group">
+                                <span className="w-24 font-semibold text-emerald-400">Age:</span>
+                                <span className="group-hover:text-white transition-colors">24 Years</span>
+                            </div>
+                            <div className="flex items-center text-gray-300 group">
+                                <span className="w-24 font-semibold text-emerald-400">Location:</span>
+                                <span className="group-hover:text-white transition-colors">Bangalore, Karnataka</span>
+                            </div>
+                            <div className="flex items-center text-gray-300 group">
+                                <span className="w-24 font-semibold text-emerald-400">Email:</span>
+                                <a href="mailto:nvseshaiah2013@gmail.com" className="hover:text-cyan-400 transition-colors">nvseshaiah2013@gmail.com</a>
+                            </div>
+                        </div>
+                        <div className="mt-8">
+                            <a href="/resume.pdf" target="_blank" className="inline-flex items-center px-6 py-2 rounded-lg bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-600 hover:text-white transition-all duration-300">
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Skills */}
+                    <div className="glass p-8 rounded-xl border border-white/5 shadow-lg hover:bg-white/5 transition-colors duration-300">
+                        <h3 className="text-2xl font-bold text-white mb-6">My Skills</h3>
+                        <div className="flex flex-wrap gap-3">
+                            {skills.map((skill, index) => (
+                                <div key={index} className="flex items-center px-4 py-2 rounded-full bg-slate-800 border border-slate-700 hover:border-emerald-500/50 hover:bg-slate-700 transition-all duration-300 group">
+                                    <FontAwesomeIcon icon={skill.icon} className={`mr-2 ${skill.color} group-hover:scale-110 transition-transform`} />
+                                    <span className="text-gray-300 group-hover:text-white">{skill.name}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

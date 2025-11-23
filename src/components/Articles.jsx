@@ -1,32 +1,48 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Articles = () => {
+    const articles = [
+        {
+            title: "Callbacks and Promises",
+            description: "Is it possible to convert a callback to promise in NodeJS? Not sure, follow the link below to know more about it.",
+            link: "https://www.geeksforgeeks.org/how-to-convert-an-existing-callback-to-a-promise-in-node-js/",
+            source: "GeeksForGeeks"
+        },
+        {
+            title: "CSS and Bootstrap",
+            description: "Do you want know how to place a Image in a box without using bootstrap. Click below link to know more.",
+            link: "https://www.geeksforgeeks.org/how-to-put-images-in-a-box-without-space-using-bootstrap/",
+            source: "GeeksForGeeks"
+        }
+    ];
+
     return (
-        <section id="articles" className="bg-gradient-to-t from-gray-100 to-gray-200">
-            <div className="flex flex-col min-h-screen">
-                <p className="mx-auto p-9 text-lg md:text-3xl text-blue-900">
-                    Articles
-                </p>
-                <div className="flex justify-center align-middle">
-                    <div className="flex justify-center">
-                        <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-                            <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">Callbacks and Promises</h5>
-                            <p className="text-gray-700 text-base mb-4">
-                                Is it possible to convert a callback to promise in NodeJS ? 
-                                Not sure, follow the link below to know more about it</p>
-                            <a href="https://www.geeksforgeeks.org/how-to-convert-an-existing-callback-to-a-promise-in-node-js/" className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Visit Geeks For Geeks</a>
+        <section id="articles" className="py-20 relative">
+            <div className="container mx-auto px-4 md:px-8">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500 mb-4">Articles</h2>
+                    <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 mx-auto rounded-full"></div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    {articles.map((article, index) => (
+                        <div key={index} className="glass p-8 rounded-xl hover:bg-white/5 transition-all duration-300 border border-white/5 shadow-lg group hover:-translate-y-1">
+                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">{article.title}</h3>
+                            <p className="text-gray-300 mb-6 leading-relaxed">
+                                {article.description}
+                            </p>
+                            <a
+                                href={article.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center text-emerald-400 hover:text-white font-medium transition-colors"
+                            >
+                                Read on {article.source} <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2 w-3" />
+                            </a>
                         </div>
-                    </div>
-                    <div className="p-3"/>
-                    <div className="flex justify-center">
-                        <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-                            <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">CSS and Bootstrap</h5>
-                            <p className="text-gray-700 text-base mb-4">
-                                Do you want know how to place a Image in a box without using bootstrap. Click below link to know more.
-                                </p>
-                            <a href="https://www.geeksforgeeks.org/how-to-put-images-in-a-box-without-space-using-bootstrap/" className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Visit Geeks For Geeks</a>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>

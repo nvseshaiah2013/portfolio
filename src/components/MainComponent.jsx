@@ -11,7 +11,7 @@ import Articles from './Articles';
 
 const MainComponent = () => {
   return (
-    <div className="divide-y divide-light-blue-400">
+    <div className="bg-slate-950 text-slate-50 min-h-screen">
       <TopNav />
       <Introduction />
       <About />

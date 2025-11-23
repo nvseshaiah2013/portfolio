@@ -1,33 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-behavior: smooth;
+:root {
+  --primary-color: #10b981;
+  /* Emerald 500 */
+  --secondary-color: #06b6d4;
+  /* Cyan 500 */
+  --bg-dark: #020617;
+  /* Slate 950 */
+  --text-light: #f1f5f9;
+  /* Slate 100 */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-nav {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d9488;
+  /* Teal 600 */
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
 
 .perspective {
-    perspective: 1000px;
-  }
-  
-  .style-flip {
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
+  perspective: 1000px;
+}
+
+.style-flip {
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .style-flip {
+  transform: rotateY(180deg);
+}
+
+.project-card-face {
+  background: rgba(15, 23, 42, 0.8);
+  /* Darker, more opaque to prevent bleed-through */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Explicitly no backdrop-filter to prevent 3D context breakage */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 1rem;
+  overflow: hidden;
+  transform: translateZ(0);
+  /* Force GPU layer */
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Blob Animation */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
   }
 
-  .style-flip:hover {
-    transform: rotateY(180deg);
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
   }
 
-  .front,
-  .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
   }
 
-  .back {
-    transform: rotateY(180deg);
+  100% {
+    transform: translate(0px, 0px) scale(1);
   }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
